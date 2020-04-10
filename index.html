@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Search apartments</h2>
+    <form method="post" action="db/getapt.php" autocomplete="off">
+        <label>Location:
+            <input type="text" name="location" placeholder="enter apartment location" required>
+        </label>
+        <label>Flat Type:
+            <select name="flat-type" required>
+                <option value="">select</option>
+                <option value="1bhk">1-BHK</option>
+                <option value="2bhk">2-BHK</option>
+                <option value="3bhk">3-BHK</option>
+            </select>
+        </label>
+       
+        <button type="submit" name="submit">search</button>
+    </form>
+    <a style="margin-top:35px" href="/projectos/add">post a apartment</a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new apartment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Add a new apartment</h2>
+    <form method="post" action="db/add.php" autocomplete="off">
+        <label>Apartment Name:
+            <input type="text" name="apartment" placeholder="enter apartment name" required>
+        </label>
+        
+        <label>Owner Name:
+            <input type="text" name="owner" placeholder="enter owner name" required>
+        </label>
+        
+        <label>Location:
+            <input type="text" name="location" placeholder="enter apartment location" required>
+        </label>
+        
+        <label>Cost:
+            <input type="number" name="cost" placeholder="enter apartment cost" required>
+        </label>
+        
+        <label>Contact:
+            <input type="tel" name="contact" placeholder="enter contact number" required>
+        </label>
+        
+        <label>Flat Type:
+            <select name="flat-type" required>
+                <option value="">select</option>
+                <option value="1bhk">1-BHK</option>
+                <option value="2bhk">2-BHK</option>
+                <option value="3bhk">3-BHK</option>
+            </select>
+        </label>
+       
+        <button type="submit" name="submit">post</button>
+    </form>
+    <a style="margin-top:35px" href="/projectos/">back</a>
+</body>
+</html>
